@@ -21,6 +21,6 @@ public class PingController {
 	@RequestMapping(method = RequestMethod.GET, value = "/revision")
 	ResponseEntity<?> handleRevisionGetRequest(){
 		System.out.println("GetRevisionRequest initiated...");
-		return new ResponseEntity<>("Apollo11 launched revised01",HttpStatus.OK);
+		return new ResponseEntity<>("Apollo11 launched revised02",HttpStatus.OK);
 	}
 }
