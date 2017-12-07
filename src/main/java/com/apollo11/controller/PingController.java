@@ -15,7 +15,12 @@ public class PingController {
 	@RequestMapping(method = RequestMethod.GET, value = "/ping")
 	ResponseEntity<?> handlePingGetRequest(){
 		System.out.println("GetPingRequest initiated...");
-
 		return new ResponseEntity<>("Apollo11 is launched",HttpStatus.OK);
+	}
+	
+	@RequestMapping(method = RequestMethod.GET, value = "/revision")
+	ResponseEntity<?> handleRevisionGetRequest(){
+		System.out.println("GetRevisionRequest initiated...");
+		return new ResponseEntity<>("Apollo11 launched revised",HttpStatus.OK);
 	}
 }
